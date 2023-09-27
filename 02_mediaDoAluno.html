@@ -7,11 +7,15 @@
     */
 
     //ENTRADA
-    
-
+    const nota = Number(prompt(`Quantas notas o aluno teve?`))
+    let media = 0
     //PROCESSAMENTO
-    
-
+    for (let contador = 1; contador <= nota; contador++) {
+        let notas = Number(prompt(`Qual a ${contador}a nota do aluno?` ))
+        media = media + notas
+        
+    }
+    const mediaFinal = media / nota
     //SAÍDA
-
+    alert(`O aluno teve ${nota} notas, com média de ${mediaFinal}`)
 </script>

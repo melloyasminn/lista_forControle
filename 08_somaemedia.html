@@ -6,11 +6,20 @@
     */
 
     //ENTRADA
-
+let listaNumeros = []
 
     //PROCESSAMENTO
+for (let index = 1; index <= 5; index++) {
+    const numero = Number(prompt(`Informe um número`))
+    listaNumeros.push(numero)
+}
+let soma = 0
+for (let index = 0; index < listaNumeros.length; index++) {
+    soma = soma + listaNumeros[index]
+    
+}
 
-
+alert(`Lista dos números: ${listaNumeros.join(", ")}\nSoma: ${soma}\nMédia: ${soma/listaNumeros.length}`)
     //SAÍDA
 
 </script>

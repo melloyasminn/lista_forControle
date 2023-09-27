@@ -7,11 +7,17 @@
     */
 
     //ENTRADA
+    let listaNumeros = []
 
+//PROCESSAMENTO
+for (let index = 1; index <= 5; index++) {
+    const numero = Number(prompt(`Informe um número`))
+    listaNumeros.push(numero)
     
-    //PROCESSAMENTO
+}
 
+//SAÍDA
+alert(`Maior número: ${listaNumeros.sort((a, b) => b-a)[0]}`)
     
-    //SAÍDA
 
 </script>

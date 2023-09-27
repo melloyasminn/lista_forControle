@@ -6,11 +6,14 @@
     */
 
     //ENTRADA
-
-
+    let listaImpares = []
     //PROCESSAMENTO
-
+    for (let index = 1; index <= 50; index++) {
+        if(index % 2 != 0){
+            listaImpares.push(index)
+          }
+    }
 
     //SAÍDA
-
+alert(`Lista de números ímpares, de 1 até 50: ${listaImpares.join(", ")}.`)
 </script>

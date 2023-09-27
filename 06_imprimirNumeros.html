@@ -6,10 +6,27 @@
     */
 
     //ENTRADA
-
-    
+    const numeroInicial = Number(prompt(`Informe o número inicial`));
+    const numeroFinal = Number(prompt(`Informe o número final`))
+    let listaImpares = []
+    let listaPares = []
     //PROCESSAMENTO
+    if(numeroInicial < numeroFinal) {
+        for (let index = (numeroInicial); index <= numeroFinal; index++) {
+            if(index % 2 == 0){
+                listaPares.push(index)
+            }
+            else{
+                listaImpares.push(index)
+            }
+            
+        }
+        alert(`Pares: ${listaPares.join(", ")}.\nImpares: ${listaImpares.join(", ")}.`)
+    }
 
+    else if (numeroInicial>= numeroFinal){
+        alert(`ERRO! O número inicial deve ser menor que o final`)
+    }
     
     //SAÍDA
 
