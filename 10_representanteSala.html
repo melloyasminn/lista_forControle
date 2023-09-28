@@ -6,13 +6,33 @@
     Peça também para o programa perguntar ao professor regente a quantidade de alunos votantes.
     Desenvolva um programa que armazene o voto de cada aluno da sala e apresente o resultado da votação, com o quantitativo de votos e também a porcentagem de votos de cada candidato a representante de sala.
     */
-
     //ENTRADA
-
-
+    const alunos = parseInt(prompt("Informe quantos alunos tem na sala?"));
+    const representante1 = prompt("Informe seu primeiro candidado 1 ");
+    const representante2 = prompt("Informe seu primeiro candidado 2 ");
+    const representante3 = prompt("Informe seu primeiro candidado 3 ");
+    let voto1 = 0;
+    let voto2 = 0;
+    let voto3 = 0;
     //PROCESSAMENTO
-
-
+    for (let votos = 1; votos <= alunos; votos++) {
+        let qualVotar = parseInt(prompt(`Qual você deseja votar ${representante1} = 1, ${representante2} = 2, ${representante3} = 3 `))
+        if (qualVotar === 1) {
+            voto1++
+        }
+        else if (qualVotar === 2) {
+            voto2++
+        }
+        else {
+            voto3++
+        }
+    }
     //SAÍDA
+    const perCen1 = (voto1 / alunos * 100)
+    const perCen2 = (voto2 / alunos * 100)
+    const perCen3 = (voto3 / alunos * 100)
 
+    alert(`O Representante: ${representante1}; Quantidade de alunos da sala: ${alunos}; Quantidade de votos: ${voto1}; Percentual: ${perCen1}% `)
+    alert(`O Representante: ${representante2}; Quantidade de alunos da sala: ${alunos}; Quantidade de votos: ${voto2}; Percentual: ${perCen2}% `)
+    alert(`O Representante: ${representante3}; Quantidade de alunos da sala: ${alunos}; Quantidade de votos: ${voto3}; Percentual: ${perCen3}%`)
 </script>

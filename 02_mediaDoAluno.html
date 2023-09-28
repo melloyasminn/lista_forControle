@@ -5,15 +5,13 @@
     Pergunte ao professor quantas notas o aluno obteve. Na sequência, usando for, peça para o professor informar todas as notas do aluno.
     Calcule a média das notas e apresente o resultado na tela.
     */
-
     //ENTRADA
     const nota = Number(prompt(`Quantas notas o aluno teve?`))
     let media = 0
     //PROCESSAMENTO
     for (let contador = 1; contador <= nota; contador++) {
-        let notas = Number(prompt(`Qual a ${contador}a nota do aluno?` ))
+        let notas = Number(prompt(`Qual a ${contador}a nota do aluno?`))
         media = media + notas
-        
     }
     const mediaFinal = media / nota
     //SAÍDA

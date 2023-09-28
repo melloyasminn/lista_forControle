@@ -4,13 +4,20 @@
     PROBLEMA
     Considere que a população de uma cidade seja de 50000 habitantes, crescendo 1,5% ao ano. Apresente em tela a população prevista para um prazo de 5 anos e um prazo de 10 anos. Apresente os dados em tela.
     */
-
     //ENTRADA
-
-    
+    let populacaoAtual = 50000;
+    let cincoAnos = 0;
+    let dezAnos = 0;
     //PROCESSAMENTO
-    
-
+    for (let index = 1; index <= 10; index++) {
+        populacaoAtual = populacaoAtual + (populacaoAtual * 0.015)
+        if (index === 5) {
+            cincoAnos = populacaoAtual
+        }
+        if (index === 10) {
+            dezAnos = populacaoAtual
+        }
+    }
     //SAÍDA
-
+    alert(`Cinco anos: ${Math.round(cincoAnos)} \nDez anos: ${Math.round(dezAnos)}`)
 </script>
